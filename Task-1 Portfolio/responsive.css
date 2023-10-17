@@ -1,0 +1,32 @@
+@media (max-width: 488px){
+    .grid_section {
+        gap: 5em;
+        padding: 2em;
+        background: #fff;
+        border: 2px solid black;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about_section {
+        height: 100vh;
+        width: 100%;
+        background: rgba(168, 166, 166, 0.808);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border: 2px solid black;
+    }
+    .card{
+        width: 90%;
+    }
+    .card_back {
+        height: 15em;
+        width: 25em;
+    }
+    .projects_section h3 {
+        text-align: center;
+        font-size: 2em;
+    }
+}

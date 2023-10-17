@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 255, 255);
+}
+
+/* Header--- */
+
+.header_section{
+    width: 100%;
+    background: #ffffff;
+    border: 2px solid black;
+}
+.navigation{
+    font-size: 2em;
+}
+.nav_logo{
+    display: float;
+    float: left;
+    padding: 1em;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1em;
+}
+.nav_menu li{
+    list-style: none;
+    padding: 0 1em;
+}
+.navigation a{
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.nav_menu a{
+    color: rgb(0, 0, 0);
+}
+.nav_link{
+    transition: .4s linear;
+}
+
+.nav_menu:hover > .nav_link:not(:hover){
+    opacity: .2;
+}
+
+/* Header Section End */
+
+
+.about_section{
+    height: 75vh;
+    width: 100%;
+    background: rgba(168, 166, 166, 0.808);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    font-size:1.7em
+}
+.card{
+    width: 50%;
+    border: 5px solid black;
+    background: #fff;
+    padding: 2em;
+    box-shadow: -20px 20px 0 -5px lightgrey, -20px 20px black;;
+    
+}
+.card h2{
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+.card p{
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+.about_section .img{
+    background: url(Images/user.jpg) no-repeat center top / cover;
+    height: 200px;
+    width: 200px;
+}
+
+/* About Section End */
+
+.grid_section{
+    gap: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3em 1em;
+    padding: 2em;
+    background: #fff;
+    border: 2px solid black;
+    font-size: 2em;
+}
+.grid_section aside h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 0.8em 0;
+    font-family: 'Playfair', serif;
+}
+.grid_section aside p{
+    margin: 0 0 1em 0;
+    font-size: 1.2em;
+    color:rgb(102 102 102);
+    line-height: 1.7;
+}
+.grid_section aside p strong{
+    color: black;
+}
+.grid_section aside p a{
+    color: #0965c6eb;
+}
+.contact_btn{
+    padding: 1em 3em;
+    font-size: 1em;
+    background: #7843e9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+    transition: transform .3s;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills__skill {
+    padding: 1em 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 1.5em;
+    font-size: 1em;
+    background: rgb(153 153 153 / 20%);
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(102 102 102);
+}
+
+/* Skills Section End */
+
+.projects_section{
+    
+}
+.projects_section h3{
+    text-align: center;
+    font-size: 5em;
+    margin: 2em 0;
+}
+
+.grid_cards{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+    
+}
+.card_pr{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card_back{
+    /* height: 40em;
+    width: 65em; */
+    height: 25em;
+    width: 40em;
+    border: 2px solid black;
+    margin: 2em 0;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+}
+.card_1{
+    background: url(Images/project_2.png) no-repeat center top / cover;
+}
+.card_2{
+    background: url(Images/project_1.png) no-repeat center top / cover;
+}
+.card_3{
+    background: url(Images/project_3.png) no-repeat center top / cover;
+}
+.fs h2{
+    font-size: 3em;
+    margin: 1.2em 0 0 0;
+}
+.card_pr .card_1:hover,
+.card_pr .card_2:hover,
+.card_pr .card_3:hover{
+    scale: 1.2;
+    /* border-radius: 20px; */
+    
+}
+.fs{
+    position: relative;
+}
+
+.card_pr::before{
+    content: "";
+    bottom: -40px;
+    left: 0;
+    height: 2px;
+    color: black;
+    background: black;
+    width: 100%;
+    position: absolute;
+}
+
+
